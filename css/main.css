@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+body{
+    min-height: 100vh;
+    background-image:url(/img/arvore.jpg);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    margin: 0 0 0; 
+}
+
+.navigation{
+    position: fixed;
+    transition: 0.5s;
+    height: 100%;
+    width: 60px;
+    background: -webkit-linear-gradient(to right, #078007, #059c38);
+    background: linear-gradient(to right, #078007, #059c38);
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.navigation:hover{
+    width: 300px;
+}
+
+.navigation ul:hover{
+    background-color: rgba(255, 255, 255, 0.178);
+}
+.navigation ul{
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navigation ul li a .icon .fa{
+    font-size: 24px;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
