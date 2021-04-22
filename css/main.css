@@ -34,7 +34,24 @@ body{
 }
 
 .navigation ul:hover{
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: rgba(255, 255, 255, 0.178)
+}
+#nohover:hover{
+    background-color: transparent;
+}
+#nohover{
+    justify-content: center;
+    align-items: center;
+    
+}
+#baixo:hover{
+    background-color: transparent;
+    
+}
+
+#baixo{
+    position: absolute;
+    padding-top: 490px;
 }
 .navigation ul{
     top: 0;
@@ -82,3 +99,5 @@ body{
     text-align: start;
     white-space: nowrap;
 }
+
+
