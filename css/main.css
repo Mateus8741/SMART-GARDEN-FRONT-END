@@ -9,7 +9,7 @@
 body{
     min-height: 100vh;
     background-image:url(/img/arvore.jpg);
-    backdrop-filter: blur(5px);
+    backdrop-filter:blur(5px);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -33,10 +33,13 @@ body{
     width: 300px;
 }
 
+
 .navigation ul:hover{
+
     background-color: rgba(255, 255, 255, 0.178)
 }
 #nohover:hover{
+
     background-color: transparent;
 }
 #nohover{
@@ -45,13 +48,14 @@ body{
     
 }
 #baixo:hover{
-    background-color: transparent;
-    
+
+    background-color: rgba(255, 255, 255, 0.178)
 }
 
 #baixo{
     position: absolute;
-    padding-top: 490px;
+    margin-top: 485px;
+
 }
 .navigation ul{
     top: 0;

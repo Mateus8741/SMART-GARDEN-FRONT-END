@@ -13,7 +13,6 @@
 }
 
 .imagem{
-    
     position: absolute;
     opacity: 0;
     animation-name: animacao;
