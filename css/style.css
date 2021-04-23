@@ -6,6 +6,8 @@
 
 body {
 	background-image:url(/img/arvore.jpg) ;
+	background-repeat: no-repeat;
+	background-size: cover;
 	backdrop-filter: blur(5px);
 	display: flex;
 	justify-content: center;
