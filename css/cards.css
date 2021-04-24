@@ -70,11 +70,13 @@
     
     pointer-events: none;
 }
+/*
 .container-pc .card-pc .box-pc:hover{
     /*
     box-shadow: 0 40px 70px #078007;
-    */
 }
+    */
+
 
 .container-pc .card-pc .box-pc .content-pc{
     padding: 20px;
@@ -216,7 +218,7 @@ button a{
 
 
 a{
-    
+    text-decoration: none;
     color: black;
 }
 

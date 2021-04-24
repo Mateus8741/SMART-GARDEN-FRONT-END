@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/pop-up.css">
 </head>
 
-
+<h5>Nome da plantação</h5>
 
    <!-- ***** Barra de menu lateral ***** -->
 
@@ -29,7 +29,7 @@
  
      <ul>
         <li>
-             <a href="/manutenção.html">
+             <a href="/main.html">
                  <span class="icon"><i class="fas fa-home fa-2x"></i></span>
                  <span class="title">HOME</span>
                  
@@ -58,7 +58,7 @@
      </ul>
      <ul>
         <li>
-             <a href="#">
+             <a href="/manutenção.html">
                  <span class="icon"><i class="fas fa-address-card fa-2x"></i></span>
                  <span class="title">PERFIL</span>
         </li>
@@ -76,7 +76,6 @@
 
 
 
-<!-- BOTÂO ADICIONAR -->
 
 
 
@@ -96,7 +95,7 @@
                      <li><h2>HORARIO DE IRRIGAÇÂO</h2></li>
                      <li><h2>ÀREA DE IRRIGAÇÂO</h2></li>
                      <li><h2>ESTADO ATUAL</h2></li>
-                     <li id="noborder"><a href="#"id="edt">editar</a>  
+                     <li id="noborder"><a href=""id="edt">editar</a>  
                         <a href="#" id="edt">favoritar</a><i class="fas fa-star" style="filter: invert(100%);"></i></li>
                   </ul>
                </div>
@@ -109,11 +108,12 @@
       <div class="card-pc">
          <div class="box-pc">
             <div class="content-pc">
-               <h2>MEDIUM</h2>
-               <h3>10 Banners</h3>
-               <p>Cliente escolhe 5 banners<br>com direito à 5 alterações.</p>
-               <h4>R$ 75,00</h4>
-               <h5>*Cliente escolhe mais 1 banner dentre os 10 e ganha uma edição extra</h5>
+               <li><h2>LOTE</h2></li>
+                     <li><h2>HORARIO DE IRRIGAÇÂO</h2></li>
+                     <li><h2>ÀREA DE IRRIGAÇÂO</h2></li>
+                     <li><h2>ESTADO ATUAL</h2></li>
+                     <li id="noborder"><a href=""id="edt">editar</a>  
+                        <a href="#" id="edt">favoritar</a><i class="fas fa-star" style="filter: invert(100%);"></i></li>
             </div>
          </div>
       </div>
@@ -131,19 +131,7 @@
             </div>
          </div>
       </div>
-      <div class="card-pc">
-         <div class="box-pc">
-            <div class="content-pc">
-               <h2>LARGE</h2>
-               <h3>20 Banners</h3>
-               <p>Cliente escolhe 10 banners<br>com direito à 10 alterações.</p>
-               <h4>R$ 100,00</h4>
-               <h6>*Cliente escolhe mais 2 banners dentre os 10 e ganha duas edições extras</h6>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>   
+   
 
 
 <!-- POPUP DO BOTÂO ADICIONAR -->
@@ -153,18 +141,33 @@
 
 <div class="form-popup" id="myForm">
   <form action="/action_page.php" class="form-container">
-    <h1>ADICIONAR</h1>
+    <h1>CRIAR ÁREA DE PLANTIO</h1>
     <input type="checkbox" name="caixa" checked></input>
-    <i class="fas fa-times fa-2x" onclick="closeForm()" style="cursor: pointer; position: absolute; left: 450px; bottom: 490px;"></i>
-   
-    <div class="label">LOTE</div>
-    <input type="text" name="lote" required>
-    <div class="label">ENDEREÇO</div>
-    <input type="text" name="endereço" required>
-    <div class="label">ALIMENTO</div>
-    <input type="text" placeholder="ADICIONAR UM ALIMENTO" name="alimento" required>
-    <input type="text" placeholder="ADICIONAR UM ALIMENTO" name="alimento" required>
+    <i class="fas fa-times fa-2x" onclick="closeForm()" style="cursor: pointer; position: absolute; left: 738px; bottom: 530px;"></i>
+   <div class="fundo">
+      <div class="label">NOME DA ÁREA DE PLANTIO:</div>
+      <input type="text" name="lote" required>
+      <div class="label">ENDEREÇO:</div>
+      <input type="text" name="endereço" required>
+   </div>
+    <h1>CRIAR LOTE</h1>
+    <div class="fundo2">
 
+       <!--
+      <input type="text" placeholder="ADICIONAR UM ALIMENTO" name="alimento" required ><br>
+      <input type="text" placeholder="ADICIONAR UM ALIMENTO" name="alimento" required style="width: 300px;">
+    -->
+
+    <div class="label">NOME DO LOTE:</div>
+    <input type="text" name="lote" required>
+    <div class="label">ÁREA DE PANTIO:</div>
+    <select name="" id="">
+       <option value="">
+
+</option>
+    </select>
+    <input type="text" name="endereço" required>
+   </div>
     <button type="submit" class="btn">Login</button>
   </form>
 </div>
