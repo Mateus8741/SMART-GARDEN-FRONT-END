@@ -7,13 +7,14 @@
     <title>Smart Garden</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/pop-up.css">
 </head>
 
 
 
    <!-- ***** Barra de menu lateral ***** -->
 
-
+   
 <div class="navigation">
 
    <ul id="nohover">
@@ -25,7 +26,7 @@
             </li>
     </ul>
 
-
+ 
      <ul>
         <li>
              <a href="/manutenção.html">
@@ -77,9 +78,7 @@
 
 <!-- BOTÂO ADICIONAR -->
 
-<div class="btn">
-   <button><a href="#"><p>ADICIONAR<p></a> <i class="fas fa-plus-circle"></i></button>
-</div>
+
 
 <!-- ****** CARDS UM****** -->
 
@@ -143,14 +142,32 @@
             </div>
          </div>
       </div>
-   
-      
    </div>
-
-
 </div>   
 
 
+<!-- POPUP DO BOTÂO ADICIONAR -->
+
+
+<button class="open-button" onclick="openForm()">adicionar <i class="fas fa-plus-circle"></i></button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>ADICIONAR</h1>
+    <input type="checkbox" name="caixa" checked></input>
+    <i class="fas fa-times fa-2x" onclick="closeForm()" style="cursor: pointer; position: absolute; left: 450px; bottom: 490px;"></i>
+   
+    <div class="label">LOTE</div>
+    <input type="text" name="lote" required>
+    <div class="label">ENDEREÇO</div>
+    <input type="text" name="endereço" required>
+    <div class="label">ALIMENTO</div>
+    <input type="text" placeholder="ADICIONAR UM ALIMENTO" name="alimento" required>
+    <input type="text" placeholder="ADICIONAR UM ALIMENTO" name="alimento" required>
+
+    <button type="submit" class="btn">Login</button>
+  </form>
+</div>
 
 
 
@@ -164,5 +181,6 @@
 
     <script src="https://kit.fontawesome.com/905ede63f2.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/pop-up.js"></script>
 </body>
 </html>
