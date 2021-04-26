@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 
+
 body {
 	background-image:url(/img/arvore.jpg) ;
 	background-repeat: no-repeat;
@@ -258,19 +259,22 @@ input:focus{
 	height: 40px;
 	width: 40px;
 }
+
 .social-container a:hover{
 border-color: #078007;
 }
+
 .face:hover{
 	background-color: #3b5998;
 }
+
 .google:hover{
 	background-color: #db4a39;
 }
+
 .linkedin:hover{
 	background-color: #0e76a8;
 }
-
 
 i{
 	color: black;

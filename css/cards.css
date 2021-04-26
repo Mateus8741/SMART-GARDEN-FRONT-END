@@ -3,13 +3,17 @@
     
     display:flex;
     margin-left: 50px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     justify-content:center;
     align-items: center;
     max-width: 1700px;
     flex-wrap: wrap;
 
+
 }
+
+
+
 .navigation{
     position: absolute;
 }
@@ -60,6 +64,7 @@
     align-items: center;
     overflow: hidden;
 }
+
 .container-pc .card-pc .box-pc::before{
     content: ' ';
     position: absolute;
@@ -152,7 +157,7 @@
     font-weight: bold ;
 }
 .container-pc .card-pc:nth-child(2) .box-pc .content-pc h4{
-    background: #e91e63;
+    background: #2196f3;
     border-style: solid;
     border-color: white;
     border-width: 6px;

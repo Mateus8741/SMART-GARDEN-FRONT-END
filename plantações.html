@@ -58,7 +58,7 @@
      </ul>
      <ul>
         <li>
-             <a href="/manutenção.html">
+             <a href="/perfil.html">
                  <span class="icon"><i class="fas fa-address-card fa-2x"></i></span>
                  <span class="title">PERFIL</span>
         </li>
@@ -80,12 +80,26 @@
 
 
 <!-- ****** CARDS UM****** -->
-
-<div class="geral">
-   
-
-
    <div class="container-pc">
+         <div class="card-pc">
+            <div class="box-pc">
+               <div class="content-pc">
+                  <div class="listas">
+                     <ul>
+                        <li><h2>LOTE</h2></li>
+                        <li><h2>HORARIO DE IRRIGAÇÂO</h2></li>
+                        <li><h2>ÀREA DE IRRIGAÇÂO</h2></li>
+                        <li><h2>ESTADO ATUAL</h2></li>
+                        <li id="noborder"><a href=""id="edt">editar</a>  
+                           <a href="#" id="edt">favoritar</a><i class="fas fa-star" style="filter: invert(100%);"></i></li>
+                     </ul>
+                  </div>
+               </div>
+         </div>
+      </div>
+
+      <!--CARD DOIS-->
+
       <div class="card-pc">
          <div class="box-pc">
             <div class="content-pc">
@@ -103,82 +117,97 @@
       </div>
    </div>
 
-      <!--CARD DOIS-->
+      <!--CARD TRES-->
 
       <div class="card-pc">
          <div class="box-pc">
             <div class="content-pc">
-               <li><h2>LOTE</h2></li>
+               <div class="listas">
+                  <ul>
+                     <li><h2>LOTE</h2></li>
                      <li><h2>HORARIO DE IRRIGAÇÂO</h2></li>
                      <li><h2>ÀREA DE IRRIGAÇÂO</h2></li>
                      <li><h2>ESTADO ATUAL</h2></li>
                      <li id="noborder"><a href=""id="edt">editar</a>  
                         <a href="#" id="edt">favoritar</a><i class="fas fa-star" style="filter: invert(100%);"></i></li>
+                  </ul>
+               </div>
+            </div>
+      </div>
+   </div>
+
+   <div class="card-pc">
+      <div class="box-pc">
+         <div class="content-pc">
+            <div class="listas">
+               <ul>
+                  <li><h2>LOTE</h2></li>
+                  <li><h2>HORARIO DE IRRIGAÇÂO</h2></li>
+                  <li><h2>ÀREA DE IRRIGAÇÂO</h2></li>
+                  <li><h2>ESTADO ATUAL</h2></li>
+                  <li id="noborder"><a href=""id="edt">editar</a>  
+                     <a href="#" id="edt">favoritar</a><i class="fas fa-star" style="filter: invert(100%);"></i></li>
+               </ul>
             </div>
          </div>
-      </div>
+   </div>
+</div>
 
-   <!--CARD TRES-->
+<!-- AQUI ADICIONA MAIS CARDS -->
 
-      <div class="card-pc">
-         <div class="box-pc">
-            <div class="content-pc">
-               <h2>LARGE</h2>
-               <h3>20 Banners</h3>
-               <p>Cliente escolhe 10 banners<br>com direito à 10 alterações.</p>
-               <h4>R$ 100,00</h4>
-               <h6>*Cliente escolhe mais 2 banners dentre os 10 e ganha duas edições extras</h6>
-            </div>
-         </div>
-      </div>
-   
+   </div>   
 
 
-<!-- POPUP DO BOTÂO ADICIONAR -->
 
 
-<button class="open-button" onclick="openForm()">adicionar <i class="fas fa-plus-circle"></i></button>
+<button class="open-button"onclick="openForm()"> adicionar <i class="fas fa-plus-circle"></i></button> <!-- POPUP DO BOTÂO ADICIONAR -->
 
 <div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
+  <form class="form-container">
     <h1>CRIAR ÁREA DE PLANTIO</h1>
     <input type="checkbox" name="caixa" checked></input>
-    <i class="fas fa-times fa-2x" onclick="closeForm()" style="cursor: pointer; position: absolute; left: 738px; bottom: 530px;"></i>
+    <i class="fas fa-times fa-2x" onclick="closeForm()" style="cursor: pointer; position: absolute; left: 740px; bottom: 490px;"></i>
    <div class="fundo">
       <div class="label">NOME DA ÁREA DE PLANTIO:</div>
       <input type="text" name="lote" required>
       <div class="label">ENDEREÇO:</div>
       <input type="text" name="endereço" required>
    </div>
+   
     <h1>CRIAR LOTE</h1>
     <div class="fundo2">
-
-       <!--
-      <input type="text" placeholder="ADICIONAR UM ALIMENTO" name="alimento" required ><br>
-      <input type="text" placeholder="ADICIONAR UM ALIMENTO" name="alimento" required style="width: 300px;">
-    -->
-
     <div class="label">NOME DO LOTE:</div>
     <input type="text" name="lote" required>
-    <div class="label">ÁREA DE PANTIO:</div>
-    <select name="" id="">
-       <option value="">
-
-</option>
+   <!--
+    <div class="label" style="display: inline;">ÁREA DE PLANTIO:</div>
+    <select name="" id="slc">
+      <option value=""></option>
+      <option value="">NONE</option>
+      <option value="">NONE</option>
     </select>
-    <input type="text" name="endereço" required>
+    -->
+    <div class="label" style="display: inline;">ÁREA DE IRRIGAÇÃO(m²):</div>
+    <input type="text" name="lote" class="m2" required>
+    
+   
+    <div class="label" style="display: inline;">IRRIGADORES:</div>
+    <select name="" id="slc" style="display: inline; ">
+      <option value="">0</option>
+      <option value="">1</option>
+      <option value="">2</option>
+      <option value="">3</option>
+      <option value="">4</option>
+      <option value="">5</option>
+      <option value="">6</option>
+      <option value="">7</option>
+      <option value="">8</option>
+      <option value="">9</option>
+      <option value="">10</option>
+    </select>
    </div>
-    <button type="submit" class="btn">Login</button>
+    <button type="submit" class="btn">Salvar</button>
   </form>
 </div>
-
-
-
-
-
-
-
- 
 
 
 

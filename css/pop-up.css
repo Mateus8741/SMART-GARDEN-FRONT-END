@@ -1,23 +1,9 @@
-  body {
+body{
   font-family: Arial, Helvetica, sans-serif;
-  background-color:blue ;
 }
 
 * {
   box-sizing: border-box;
-}
-
-h5{
-  margin-left:680px;
-  border: 2px solid;
-  border-radius: 30px;
-  letter-spacing: 1px;
-  font-size: 50px;
-  max-width: 700px;
-  text-align: center;
-
-  
-  
 }
 
 /* Button used to open the contact form - fixed at the bottom of the page */
@@ -41,6 +27,7 @@ h5{
 /* The popup form - hidden by default */
 .form-popup {
   position: absolute;
+
   left: 600px;
   border: none;
   z-index: 1;
@@ -48,7 +35,7 @@ h5{
 
 /* Add styles to the form container */
 .form-container {
-  height: 590px;
+  height: 540px;
   width: 780px;
   border-radius: 20px;
   background-color: #f1f1f1;
@@ -59,7 +46,7 @@ h5{
 .form-container h1{
   display: flex;
   justify-content: center;
-  padding-top: 5px;
+  padding-top: 15px;
   padding-bottom: 15px;
 }
 .fundo, .fundo2{
@@ -68,12 +55,17 @@ h5{
   border-radius: 15px;
   
 }
-.form-container 
+/*
+.form-container {
 
+  TEM QUE MUDAR ESSA BUCETA HJ AINDA LEMBRA PAU NO CU PARA MATEUS
+}
+*/
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=text] {
   width: 100%;
-  padding: 15px;
+  padding: 5px;
+  font-size: 20px;
   margin: 4px 0 5px 0;
   border: none;
   border-bottom: 3px solid #059c38;
@@ -96,6 +88,14 @@ h5{
 .form-container input[type=text]{
   
 }
+.form-popup select{
+ display: inline;
+ border-radius: 20px;
+ 
+}
+.form-popup input[class='m2']{
+  width: 235px;
+}
 
 .form-container input[type=text]:focus, .form-container input[type=text]:focus {
   background-color: transparent;
@@ -109,6 +109,7 @@ h5{
 
   display: flex;
   margin-left: 240px;
+  margin-top: 1pc;
   justify-content: center;
   max-width: 250px;
   flex-wrap: wrap;
@@ -141,4 +142,101 @@ h5{
 .form-container input[type=checkbox]{
   cursor: pointer;
   display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAO SERVE PRA NADA*/
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.mostrar {
+  display: flex;
+}
+
+.modal {
+  background: white;
+  width: 60%;
+  min-width: 300px;
+  padding: 40px;
+  border: 10px solid #988b7a;
+  box-shadow: 0 0 0 10px white;
+  position: relative;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.mostrar .modal {
+  animation: modal .3s;
+}
+
+.fechar {
+  position: absolute;
+  font-size: 1.2em;
+  top: -30px;
+  right: -30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background: #988b7a;
+  color: white;
+  font-family: "PT Mono", monospace;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
 }
