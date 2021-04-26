@@ -5,7 +5,7 @@
 }
 
 body {
-	background-image:url(/img/arvore.jpg) ;
+	background-image: url(../img/arvore.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	backdrop-filter: blur(5px);
@@ -15,7 +15,8 @@ body {
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
-	margin: 0 0 0;   /* NAO TIREM ESSA MARGEM PELO AMOR DE DEUS, TO PUTO COM ELA*/
+	margin: 0 0 0;
+	/* NAO TIREM ESSA MARGEM PELO AMOR DE DEUS, TO PUTO COM ELA*/
 }
 
 h1 {
@@ -47,11 +48,11 @@ button {
 	padding: 12px 45px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	
+
 	cursor: pointer;
 }
 
-button:hover{
+button:hover {
 	background-color: #078007;
 }
 
@@ -79,7 +80,7 @@ input {
 	border-radius: 20px;
 }
 
-input:focus{
+input:focus {
 	outline: none;
 	animation: pisca 1s ease infinite;
 }
@@ -87,8 +88,8 @@ input:focus{
 .container {
 	background-color: #fff;
 	border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-						  0 10px 10px rgba(0,0,0,0.22);
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+		0 10px 10px rgba(0, 0, 0, 0.22);
 	position: relative;
 	overflow: hidden;
 	width: 768px;
@@ -104,23 +105,24 @@ input:focus{
 }
 
 /* EFEITOS DO PAI */
-@keyframes pisca{
-	from { 
-				border-color: #8080807e;
+@keyframes pisca {
+	from {
+		border-color: #8080807e;
 	}
-				
-				
-				
-	to{
+
+
+
+	to {
 		border-color: #078007;
 	}
 }
 
-@keyframes popup{
-	to{
+@keyframes popup {
+	to {
 		filter: brightness(50%);
 	}
 }
+
 /* EFEITOS DO PAI */
 
 .overlay-container {
@@ -130,16 +132,16 @@ input:focus{
 	width: 50%;
 	height: 100%;
 	overflow: hidden;
-	
-	
+
+
 }
 
-i{
+i {
 	margin: 0 0 15px;
 	color: black;
 }
 
-div.arrow{
+div.arrow {
 	position: absolute;
-	margin: 15px ;
+	margin: 15px;
 }

@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box ;
+    box-sizing: border-box;
 }
 
-h5{
+h5 {
     display: fixed;
-    margin-left:450px;
+    margin-left: 450px;
     margin-bottom: 50px;
     border: 5px solid;
     border-radius: 30px;
@@ -18,21 +18,21 @@ h5{
     text-align: center;
 }
 
-body{
+body {
     min-height: 100vh;
-    background-image:url(/img/arvore.jpg);
+    background-image: url(../img/arvore.jpg);
     background-repeat: no-repeat;
-	background-size: cover;
-    backdrop-filter:blur(5px);
+    background-size: cover;
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
-    margin: 0 0 0; 
+    margin: 0 0 0;
 }
 
-.navigation{
+.navigation {
     position: fixed;
     transition: 0.1s;
     height: 50%;
@@ -45,46 +45,48 @@ body{
     border-bottom-right-radius: 15px;
 }
 
-.navigation:hover{
+.navigation:hover {
     border-right: solid 5px white;
     z-index: 1;
     width: 250px;
 }
 
 
-.navigation ul:hover{
+.navigation ul:hover {
 
     background-color: rgba(255, 255, 255, 0.178)
 }
-#nohover:hover{
+
+#nohover:hover {
 
     background-color: transparent;
 }
-#nohover{
+
+#nohover {
     justify-content: center;
     align-items: center;
-    
+
 }
 
-#baixo:hover{
+#baixo:hover {
 
     background-color: rgba(255, 255, 255, 0.178)
 }
 
 
-.navigation ul{
+.navigation ul {
     top: 0;
     left: 0;
     width: 100%;
 }
 
-.navigation ul li{
+.navigation ul li {
     position: relative;
     width: 100%;
     list-style: none;
 }
 
-.navigation ul li a{
+.navigation ul li a {
     position: relative;
     display: block;
     width: 100%;
@@ -96,7 +98,7 @@ body{
 
 }
 
-.navigation ul li a .icon{
+.navigation ul li a .icon {
     position: relative;
     display: block;
     min-width: 60px;
@@ -105,11 +107,11 @@ body{
     text-align: center;
 }
 
-.navigation ul li a .icon .fa{
+.navigation ul li a .icon .fa {
     font-size: 24px;
 }
 
-.navigation ul li a .title{
+.navigation ul li a .title {
     position: relative;
     display: block;
     padding: 0 10px;
