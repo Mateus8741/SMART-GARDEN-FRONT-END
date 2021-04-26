@@ -19,7 +19,8 @@ body{
   text-transform: uppercase;
   transition: transform 80ms ease-in;
   cursor: pointer;
-  position: flex;
+  display: flex;
+  
   top:170px;
   width: 190px;
 }
