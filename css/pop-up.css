@@ -19,7 +19,7 @@ body{
   text-transform: uppercase;
   transition: transform 80ms ease-in;
   cursor: pointer;
-  position: absolute;
+  position: flex;
   top:170px;
   width: 190px;
 }
@@ -27,7 +27,7 @@ body{
 /* The popup form - hidden by default */
 .form-popup {
   position: absolute;
-
+  display: none;
   left: 600px;
   border: none;
   z-index: 1;
