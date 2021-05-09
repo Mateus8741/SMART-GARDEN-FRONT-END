@@ -1,95 +1,46 @@
-/******************************************************************** painel de imagens **********************************************/
-
-.container{
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    
-    
-}
-p{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-#wrapper {
-    justify-content: center;
-    align-items: center;
-    max-width: 68em;
-    width: 100%;
+/* Profile container */
+.profile {
+    margin: 20px 0;
+  }
+  
+  /* Profile sidebar */
+  .profile-sidebar {
+    padding: 20px 0 10px 0;
+    background: #fff;
+  }
+  .container{
+      width: 100px;
+      justify-content: center;
+      align-items: center;
+  }
+  .profile-userpic img {
+    float: none;
     margin: 0 auto;
-    padding: 0 2em;
-    opacity: 1;
-    filter: none;
-    -moz-transition: opacity 1s ease, -moz-filter 1s ease;
-    -webkit-transition: opacity 1s ease, -webkit-filter 1s ease;
-    -ms-transition: opacity 1s ease, -ms-filter 1s ease;
-    transition: opacity 1s ease, filter 1s ease;
-        
-}
-
-body.is-loading #wrapper {
-    opacity: 0;
-    -moz-filter: blur(1px);
-    -webkit-filter: blur(1px);
-    -ms-filter: blur(1px);
-    filter: blur(1px);
-}
-
-body.is-covered #wrapper {
-    -moz-filter: blur(3px);
-    -webkit-filter: blur(3px);
-    -ms-filter: blur(3px);
-    filter: blur(3px);
-}
-
-/************************************************************************** upload ************************************************************/
-#Arquivo{
-    cursor: pointer;
-    font-size: larger;
-    font-weight: 500;
-    font-family: sans-serif;
-    color: aliceblue;
-}
-#enviar, #apagar{
-    cursor: pointer;
-    border-radius: 5px;
-    color:black;
-    font-weight: 900;
-    font-size: large;
-    background-color: transparent;
-    border-radius: 20px;
-    border-color: #02aefd;
-    border-style: double;
-    width: 80px;
-    outline: 0;
-}
-#enviar:hover, #apagar:hover{
-    transition: all 1s;
-    color: white;
-    background-color: #e6ecee3f;
-}
-
-#Arquivo{
-    background-color: #02adfd50;
-    color: black;
-    font-size: 15px;
-    
-    
-}
-
-
-
-
-/*********************************************************************** mostra imagem *************************************************************/
-#img{
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    display: inline-block;
-    margin: 0 0 1em 0;
-    padding: 0.5em;
-    border: solid 1px rgba(255, 255, 255, 0.25);
-    background-color: rgba(255, 255, 255, 0.075);
-
-}
+    width: 50%;
+    height: 50%;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    border-radius: 50% !important;
+  }
+  
+  .profile-usertitle {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .profile-usertitle-name {
+    color: #5a7391;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+  
+  .profile-usertitle-job {
+    text-transform: uppercase;
+    color: #5b9bd1;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  
