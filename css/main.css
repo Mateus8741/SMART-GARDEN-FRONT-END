@@ -121,19 +121,3 @@ body {
     white-space: nowrap;
 }
 
-.conteudo{
-    word-wrap: break-word;
-}
-
-h1{
-    display: flex;
-    justify-content: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-p{
-  display: flex;
-  justify-content: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}

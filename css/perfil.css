@@ -5,7 +5,10 @@
   
   /* Profile sidebar */
   .profile-sidebar {
-    padding: 20px 0 10px 0;
+    display: flex;
+    padding: 300px 0 10px 0;
+    margin-left:800px ;
+    margin-right: -1100px;
     background: #fff;
   }
   .container{
