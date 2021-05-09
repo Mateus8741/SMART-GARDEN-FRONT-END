@@ -22,13 +22,13 @@ $endereco = $_POST["endereco"] ?? null;
 
 
 
-$sql = "INSERT INTO usuarios (nome_area,endereco,created) VALUES ('$area_plantio','$endereco',NOW())";
+$sql = "INSERT INTO area (nome_area,endereco,created) VALUES ('$area_plantio','$endereco',NOW())";
 $req = mysqli_query($conn,$sql);
 
 if(mysqli_insert_id($conn)){
     $_SESSION['msg'] = "<p style = 'color:white'>Usuario Cadastrado!</p>";
-    header("Location:../index.php");
+    header("Location:../plantações.html");
 }else{
     $_SESSION['msg'] = "<p style = 'color:red'>Usuario não Cadastrado!</p>";
-    header("Location:../index.php");}
+    header("Location:../plantações.html");}
 
