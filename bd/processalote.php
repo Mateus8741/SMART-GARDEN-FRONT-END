@@ -2,19 +2,22 @@
 session_start();
 include_once("conexao.php");
 
-$nomelote = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
-$tamanholote = filter_input(INPUT_POST, 'tamanho', FILTER_SANITIZE_STRING);
-$quantidadelote = filter_input(INPUT_POST, 'quantidade', FILTER_SANITIZE_STRING);
-$horalote = filter_input(INPUT_POST, 'hora', FILTER_SANITIZE_STRING);
+$lote = $_POST["nome_lote"] ?? null;
+$area = $_POST["area_em_m3"] ?? null;
+$area_plantio = $_POST["area_plantio"] ?? null;
+$irrigadores = $_POST["irrig"] ?? null;
+$horario = $_POST["hora"] ?? null;
 
-$result_lote = "INSERT INTO lote (nome, 	area_irrigação, irrigadores, horario_irrigação) VALUES ('$nomelote', '$tamanholote', $quantidadelote, $horalote )";
-$resultado_lote = mysqli_query($conn, $result_lote);
+
+$sql = "INSERT INTO lote (nome_lote,area_em_m3,area_plantio,irrigadores,horario,created)
+ VALUES ('$lote','$area','$area_plantio','$irrigadores','$horario',NOW())";
+$req = mysqli_query($conn,$sql);
 
 if(mysqli_insert_id($conn)){
-	$_SESSION['msg'] = "<p style='color:green;'>Usuário cadastrado com sucesso</p>";
-	header("Location: index.php");
+    $_SESSION['msg'] = "<p style = 'color:white'>Usuario Cadastrado!</p>";
+    header("Location:../plantações.html");
 }else{
-	$_SESSION['msg'] = "<p style='color:red;'>Usuário não foi cadastrado com sucesso</p>";
-	header("Location: index.php");
-}
-?>
+    $_SESSION['msg'] = "<p style = 'color:red'>Usuario não Cadastrado!</p>";
+    header("Location:../plantações.html");}
+
+
