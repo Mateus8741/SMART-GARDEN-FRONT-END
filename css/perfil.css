@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 section{
   position: relative;
   min-height: 100vh;
@@ -88,3 +90,92 @@ section .card .camera a{
 }
 
 
+/* MENU INTERATIVO */
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+.action{
+
+  position: absolute;
+  top: 30px;
+  right: -15px;
+}
+
+.action .profile{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.action .menu{
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  padding: 10px 20px;
+  background: white;
+  width: 200px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+.action .menu.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.action .menu::before{
+  content: ' ';
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  transform: rotate(45deg);
+}
+
+.action .menu ul li{
+  list-style: none;
+  padding: 5px 0;
+  direction: flex;
+  align-items: center;
+  display: flex;
+
+}
+.action .menu ul li i{
+  padding: 0 10px;
+  transition: 0.5s;
+  opacity: 0.5;
+  color: black;
+
+}
+.action .menu ul li:hover i{
+  opacity: 1;
+}
+
+.action .menu ul li a{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.action .menu ul li:hover a{
+  color: green;
+}
+
+@keyframes gira {
+   to {
+      transform: rotate(360deg);
+  }
+}
+#cog.active{
+  animation: gira 5s linear infinite;
+}

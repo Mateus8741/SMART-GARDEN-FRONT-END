@@ -68,11 +68,18 @@
    <section>
       <div class="card">
          <!--MENU FLUTUANTE-->
-         <div class="editar">
-            <a href="#">
-               <i class="fas fa-edit"></i>
-            </a>
-         </div>
+         <div class="action">
+            <div class="profile" onclick="menuToggle();">
+                <i id="cog" onclick="Toggle();" class="fas fa-cog" style="color: white;"></i>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#"><i class="fas fa-user-edit" ></i>Alterar Nome</a></li>
+                    <li><a href="#"><i class="fas fa-image" ></i>Alterar Foto</a></li>
+                    <li><a href="#"><i class="fas fa-envelope" ></i>Alterar E-mail</a></li>
+                </ul>
+            </div>
+        </div>
           <div class="content">
               <div class="imgText">
                   <div class="imgBox">
@@ -106,6 +113,18 @@
          
    <script src="https://kit.fontawesome.com/905ede63f2.js" crossorigin="anonymous"></script>
    <script src="./js/upload.js"></script>
+   <script>
+      function menuToggle(){
+          const toggleMenu = document.querySelector('.menu');
+          toggleMenu.classList.toggle('active')
+      }
+  </script>
+  <script>
+     function Toggle(){
+      const toggleMenu = document.getElementById('cog');
+      toggleMenu.classList.toggle('active')
+     }
+  </script>
 </body>
 
 </html>
