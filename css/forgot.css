@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-* {
+*{
+	font-family: 'Poppins', sans-serif;
 	box-sizing: border-box;
+	
 }
+
 
 body {
 	background-image: url(../img/arvore.jpg);
@@ -13,7 +16,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: 0 0 0;
 	/* NAO TIREM ESSA MARGEM PELO AMOR DE DEUS, TO PUTO COM ELA*/
