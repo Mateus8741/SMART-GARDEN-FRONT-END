@@ -155,23 +155,14 @@ section .card .camera a{
 .action .menu ul li i{
   padding: 0 10px;
   transition: 0.5s;
-  opacity: 0.5;
+  opacity: 0.7;
   color: black;
-
 }
 .action .menu ul li:hover i{
   opacity: 1;
 }
 
-.action .menu ul li a{
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  transition: 0.5s;
-}
-
-.action .menu ul li:hover a{
+.action .menu ul li:hover p{
   color: green;
 }
 
@@ -182,4 +173,16 @@ section .card .camera a{
 }
 #cog.active{
   animation: gira 5s linear infinite;
+}
+
+
+.action .menu ul li i p{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.5s;
+  padding-left: 5px;
+  cursor: pointer;
+  text-align: center;
 }

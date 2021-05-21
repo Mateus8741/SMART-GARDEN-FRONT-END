@@ -74,16 +74,18 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#"><i class="fas fa-user-edit" ></i>Alterar Nome</a></li>
-                    <li><a href="#"><i class="fas fa-image" ></i>Alterar Foto</a></li>
-                    <li><a href="#"><i class="fas fa-envelope" ></i>Alterar E-mail</a></li>
+                    <li><i class="fas fa-pencil-alt" ><p>Alterar Nome</p></i></li>
+                    <li><i id="edt" class="fas fa-camera" ><p>Alterar Foto</p></i></li><input type="file" name="file" id="file1" style="display: none;">
+                    <li><i class="fas fa-envelope"><p>Alterar E-mail</p></i></li>
                 </ul>
             </div>
         </div>
           <div class="content">
               <div class="imgText">
                   <div class="imgBox">
-                      <img src="./img/1.jpg" width="100%" height="100%">
+                     <form method="POST">
+                        <img src="./img/1.jpg" width="100%" height="100%">
+                     </form>
                       <!--botao troca foto-->
                   </div>
          
@@ -104,6 +106,12 @@
    <script src="https://kit.fontawesome.com/905ede63f2.js" crossorigin="anonymous"></script>
    <script src="./js/upload.js"></script>
    <script src="./js/perfil.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+   <script>
+      $("#edt").click(function () {
+    $("#file1").trigger('click');
+});
+   </script>
 </body> 
 
 </html>
