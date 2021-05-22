@@ -95,29 +95,31 @@ section .card .camera a{
 
 section .card .content button{
   position: absolute;
+  display: none;
   top: 265px;
   left: 20px;
   cursor: pointer;
   border: none;
   background: none;
   color: #0fbb1e;
-  display:none;
+  visibility: hidden;
 }
 section .card .content #cross{
   position: absolute;
+  display: absolute;
   top: 265px;
   left: 255px;
   cursor: pointer;
   border: none;
   background: none;
   color: red;
-  display:none;
+  visibility: hidden;
 }
 section .card .content button.active{
-  display: block;
+  display: flex;
 }
 section .card .content #cross.active{
-  display: block;
+  visibility: visible;
 }
 
 
