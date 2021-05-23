@@ -15,9 +15,9 @@ $req = mysqli_query($conn,$sql);
 
 if(mysqli_insert_id($conn)){
     $_SESSION['msg'] = "<p style = 'color:white'>Usuario Cadastrado!</p>";
-    header("Location:../plantações.html");
+    header("Location:../plantações.php");
 }else{
     $_SESSION['msg'] = "<p style = 'color:red'>Usuario não Cadastrado!</p>";
-    header("Location:../plantações.html");}
+    header("Location:../plantações.php");}
 
 
