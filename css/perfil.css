@@ -2,7 +2,10 @@
 
 *{
  font-family: 'Poppins', sans-serif;
- overflow: hidden;
+
+}
+body{
+  overflow: hidden;
 }
 
 section{
@@ -49,6 +52,7 @@ section{
   transition: 0.3s ease-in-out;
   transform: perspective(500px) rotateY(180deg);
   opacity: 0;
+  visibility: hidden;
 }
 .backk.active{
   display: flex;
