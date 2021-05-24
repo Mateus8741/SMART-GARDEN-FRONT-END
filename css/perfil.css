@@ -12,7 +12,9 @@ section{
   align-items: center;
   z-index: -1;
 }
-section .card{
+/* CARD FRONT */
+.card{
+
   position: relative;
   width: 300px;
   height: 300px;
@@ -22,7 +24,41 @@ section .card{
   display: flex;
   justify-content: center;
   align-items: center;
+  transform-style: preserve-3d;
+  transition: 0.3s ease-in-out;
+
+
 }
+.backk{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #fffbfb;
+  box-shadow: 0 15px 25px black;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+.card.active{
+  transition: 0.3s ease-in-out;
+  transform: perspective(500px) rotateY(180deg);
+  opacity: 0;
+}
+.backk.active{
+  opacity: 1;
+  transition: 0.3s ease-in;
+  transform: perspective(500px) rotateY(180deg);
+}
+.teste{
+  position: absolute;
+  left: 180px;
+}
+
+
 
 section .card .content,
 section .card .imgText{
@@ -72,53 +108,34 @@ color: #0770c5;
 display: inline;
 }
 
-section .card .camera{
-position: absolute;
-bottom: 120px;
 
-justify-content: center;
-align-items: center;
-
-}
-
-section .card .camera a{
-  text-decoration: none;
-  color: white;
-}
-
-.editar a{
+/* BOTOES PERFIL */
+section .card .content #check{
   position: absolute;
-  color: white;
-  left: 250px;
-  bottom: 250px;
-}
-
-section .card .content button{
-  position: absolute;
-  display: none;
   top: 265px;
   left: 20px;
   cursor: pointer;
   border: none;
   background: none;
   color: #0fbb1e;
-  visibility: hidden;
+ 
+  /*botoes*/
 }
 section .card .content #cross{
   position: absolute;
-  display: absolute;
   top: 265px;
   left: 255px;
   cursor: pointer;
   border: none;
   background: none;
   color: red;
+ 
+  /*botoes*/
+}
+section .card .content .btn form{
   visibility: hidden;
 }
-section .card .content button.active{
-  display: flex;
-}
-section .card .content #cross.active{
+section .card .content .btn form.active{
   visibility: visible;
 }
 
