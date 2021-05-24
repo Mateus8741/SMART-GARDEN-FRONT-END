@@ -37,7 +37,7 @@ section{
   position: absolute;
   width: 300px;
   height: 300px;
-  background: #fffbfb;
+  background: #141414;
   box-shadow: 0 15px 25px black;
   border-radius: 16px;
   display: flex;
@@ -53,12 +53,15 @@ section{
   transform: perspective(500px) rotateY(180deg);
   opacity: 0;
   visibility: hidden;
+  pointer-events: none;
+  cursor: default;
 }
 .backk.active{
   display: flex;
   opacity: 1;
   transition: 0.3s ease-in;
-  transform: perspective(500px) rotateY(180deg);
+  transform: perspective(500px) rotateY(360deg);
+
 }
 .teste{
   position: absolute;
@@ -74,6 +77,13 @@ section .card .imgText{
   align-items: center;
   flex-direction: column;
 }
+section .backk .content,
+section .backk .imgText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 section .card .imgText .imgBox{
   position: relative;
@@ -83,11 +93,27 @@ section .card .imgText .imgBox{
   border-radius: 60px;
   margin-bottom: 15px;
   border: #078007 solid;
-  
+}
+section .backk .imgText .imgBox{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 60px;
+  margin-bottom: 15px;
+  border: #078007 solid;
 }
 
 
 section .card .imgBox .imgBox img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .backk .imgBox .imgBox img{
   position: absolute;
   top: 0;
   left: 0;
@@ -105,7 +131,6 @@ section .card .imgText h3{
   display: inline;
   padding-left: 15px;
 }
-
 section .card .imgText h4{
 padding-left: 15px;
 font-size: 15px;
@@ -116,8 +141,41 @@ display: inline;
 }
 
 
+section .backk .content .imgText form input{
+  border: transparent;
+  padding-top: 5px;
+  padding-left: 5px;
+  color: white;
+  border-bottom: 2px solid #078007;
+  background: transparent;
+  width: 250px;
+  outline: none;
+  
+}
+section .backk .content .imgText form input:focus{
+  animation: pisca 1s ease infinite;
+}
+@keyframes pisca{
+	from { 
+				border-color: #8080807e;
+	}
+				
+				
+				
+	to{
+		border-color: #078007;
+	}
+} 
+
+
+
+
 /* BOTOES PERFIL */
-section .card .content #check{
+
+section .backk .content #check:hover{
+  opacity: 1;
+}
+section .backk .content #check{
   position: absolute;
   top: 265px;
   left: 20px;
@@ -125,10 +183,14 @@ section .card .content #check{
   border: none;
   background: none;
   color: #0fbb1e;
- 
+  opacity: 0.5;
   /*botoes*/
 }
-section .card .content #cross{
+
+section .backk .content #cross:hover{
+  opacity: 1;
+}
+section .backk .content #cross{
   position: absolute;
   top: 265px;
   left: 255px;
@@ -136,13 +198,14 @@ section .card .content #cross{
   border: none;
   background: none;
   color: red;
+  opacity: 0.5;
  
   /*botoes*/
 }
-section .card .content .btn form{
+section .backk .content .btn form{
   visibility: hidden;
 }
-section .card .content .btn form.active{
+section .backk .content .btn form.active{
   visibility: visible;
 }
 

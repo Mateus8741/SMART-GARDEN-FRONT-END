@@ -10,18 +10,21 @@ function Toggle(){
     toggleMenu.classList.toggle('active')
 };
 
-/* BOTOES INFERIORES PERFIL*/
+/* BOTOES INFERIORES PERFIL BACKK*/
 function Toggle2(){
     const toggleMenu = document.querySelector('form');
     toggleMenu.classList.toggle('active')
 };
 
 /* FLIP PERFIL*/ 
-function teste(){
+function flip(){
     const toggleMenu = document.querySelector('.backk');
     toggleMenu.classList.toggle('active')
 }
-function teste2(){
+function flip2(){
     const toggleMenu = document.querySelector('.card');
     toggleMenu.classList.toggle('active')
 }
+
+
+

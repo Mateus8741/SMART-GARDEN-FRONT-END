@@ -31,14 +31,7 @@
 
          </li>
       </ul>
-      <ul>
-         <li>
-            <a href="./manutenção.html">
-               <span class="icon"><i class="fas fa-thermometer-three-quarters fa-2x"></i></span>
-               <span class="title">ESTAÇÔES</span></a>
-
-         </li>
-      </ul>
+      
       <ul>
          <li>
             <a href="./sugestao.html">
@@ -65,37 +58,62 @@
    </div>
    <!-- TESTE -->
    <div class="teste">
-      <button id="teste" onclick="teste(), teste2()" > aperta</button>
+      <button id="teste" onclick="flip(), flip2(); menu()" > APERTA</button>
 
-   </div>   
-   <!-- CARD PERFIL-->
+   </div> 
+   
+   
+
+
+
+
+   <!-- CARDS DO PERFIL-->
    <section>
+   <!-- CARTAO DE TRAS -->
       <div class="backk">
-               
+         <!--MENU FLUTUANTE-->
+          <div class="content">
+             <div class="btn">
+                <form action="" method="POST">
+                   <button id="check" onclick="volta(); volta2()" type="submit" id="save1"><i class="fas fa-check-circle fa-2x"></i></button>
+                   <button id="cross" onclick="volta(); volta2()" type="submit"><i class="fas fa-times-circle fa-2x"></i></button>
+                </form>
+             </div>
+              <div class="imgText">
+                  <div class="imgBox">
+                     <form method="POST">
+                        <img id="img" width="100%" height="100%">
+                     </form>
+                  </div>
+                  <form action="" method="POST">
+                     <i class="fas fa-user" style="color:white"></i><input type="text">
+                  </form>
+                  <form action="#" method="POST">
+                     <i class="fas fa-envelope-open" style="color: white;"></i><input type="e-mail" required="e-mail">
+                           <button id="save" type="submit" style="display: none;"></button>
+                  </form>
+               </div>
+            </div>
       </div>
-      <div class="card">
 
-         
+
+      
+      <!-- CARTAO DA FRENTE -->
+      <div class="card">
          <!--MENU FLUTUANTE-->
          <div class="action">
             <div class="profile" onclick="menuToggle();" >
                 <i id="cog" onclick="Toggle();" class="fas fa-cog" style="color: white;"></i>
             </div>
-            <div class="menu">
+            <div id="menu" class="menu">
                 <ul>
-                    <li><i id="nome" onclick="Toggle2(); menuToggle3();"  class="fas fa-pencil-alt"><p>Alterar Nome</p></i></li>
-                    <li><i id="foto" class="fas fa-camera" ><p>Alterar Foto</p></i></li><input type="file" name="file" id="file1" style="display: none;">
-                    <li><i id="email" class="fas fa-envelope"><p>Alterar E-mail</p></i></li>
+                    <li><i id="nome" onclick="Toggle2(); flip(); flip2();"  class="fas fa-pencil-alt"><p>Alterar Dados</p></i></li>
+                    <li><i id="foto" class="fas fa-camera"onclick="Toggle2(); flip(); flip2(); " ><p>Alterar Foto</p></i></li><input type="file" name="file" id="file1" style="display: none;">
+
                 </ul>
             </div>
         </div>
           <div class="content">
-             <div class="btn">
-                <form method="POST">
-                   <button id="check" type="submit"><i class="fas fa-check-circle fa-2x"></i></button>
-                   <button id="cross" type="submit"><i class="fas fa-times-circle fa-2x"></i></button>
-                </form>
-             </div>
               <div class="imgText">
                   <div class="imgBox">
                      <form method="POST">
@@ -118,7 +136,7 @@
 
             </div>
          </div>
-      </div>
+      
    </section>
 
 
@@ -132,6 +150,26 @@
          $("#file1").trigger('click');
       });
    </script>
+   <script>
+      $("#save").click(function () {
+         $("#save1").trigger('click');
+      });
+   </script>
+
+   <!-- PREVIEW DE IMAGEM PERFIL -->
+   <script>
+      $(function(){
+    $('#file1').change(function(){
+        const file = $(this)[0].files[0]
+        const fileReader = new FileReader()
+        fileReader.onload = function(){
+            $('#img').attr('src', fileReader.result)
+        }
+        fileReader.readAsDataURL(file)
+    })
+})
+   </script>
+   
 </body>
 
 </html>
