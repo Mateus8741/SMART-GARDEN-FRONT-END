@@ -71,28 +71,36 @@
    </div>
 
 
+   <div class="positionButton">
+       <button class="open-button" onclick="openForm()"> adicionar <i class="fas fa-plus-circle"></i></button>
+    </div>
 
+   <!-- POPUP DO BOTÂO ADICIONAR -->
 
 
 
    <!-- ****** CARDS UM****** -->
    <div class="container-pc">
+      <?php
+         include "bd/listar.php";
+          while($row_lote = mysqli_fetch_assoc($resultado_lotes)){?>
+      
       <div class="card-pc">
          <div class="box-pc">
             <div class="content-pc">
                <div class="listas">
                   <ul>
                      <li>
-                        <h2>LOTE</h2>
+                        <h2><?= "ID: ".$row_lote['id'];?></h2>
                      </li>
                      <li>
-                        <h2>HORARIO DE IRRIGAÇÂO</h2>
+                        <h2><?= "Nome: ".$row_lote['nome_lote'];?></h2>
                      </li>
                      <li>
-                        <h2>ÀREA DE IRRIGAÇÂO</h2>
+                        <h2><?= "Area: ".$row_lote['area_em_m3']."m²";?></h2>
                      </li>
                      <li>
-                        <h2>ESTADO ATUAL</h2>
+                        <h2><?= "Data De Criação: ".$row_lote['created'];?></h2>
                      </li>
                      <li id="noborder"><a href="" id="edt">editar</a>
                         <a href="#" id="edt">favoritar</a><i class="fas fa-star" style="filter: invert(100%);"></i></li>
@@ -102,60 +110,7 @@
          </div>
       </div>
 
-      <!--CARD DOIS-->
-
-      <div class="card-pc">
-         <div class="box-pc">
-            <div class="content-pc">
-               <div class="listas">
-                  <ul>
-                     <li>
-                        <h2>LOTE</h2>
-                     </li>
-                     <li>
-                        <h2>HORARIO DE IRRIGAÇÂO</h2>
-                     </li>
-                     <li>
-                        <h2>ÀREA DE IRRIGAÇÂO</h2>
-                     </li>
-                     <li>
-                        <h2>ESTADO ATUAL</h2>
-                     </li>
-                     <li id="noborder"><a href="" id="edt">editar</a>
-                        <a href="#" id="edt">favoritar</a><i class="fas fa-star" style="filter: invert(100%);"></i></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <!--CARD TRES-->
-
-      <div class="card-pc">
-         <div class="box-pc">
-            <div class="content-pc">
-               <div class="listas">
-                  <ul>
-                     <li>
-                        <h2>LOTE</h2>
-                     </li>
-                     <li>
-                        <h2>HORARIO DE IRRIGAÇÂO</h2>
-                     </li>
-                     <li>
-                        <h2>ÀREA DE IRRIGAÇÂO</h2>
-                     </li>
-                     <li>
-                        <h2>ESTADO ATUAL</h2>
-                     </li>
-                     <li id="noborder"><a href="" id="edt">editar</a>
-                        <a href="#" id="edt">favoritar</a><i class="fas fa-star" style="filter: invert(100%);"></i></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
-
+   <?php } ?>
 
 
 
@@ -165,14 +120,7 @@
 
    </div>
 
-   <div class="positionButton">
-      <button class="open-button" onclick="openForm()"> adicionar <i class="fas fa-plus-circle"></i></button>
-   </div>
-
-
-
-
-   <!-- POPUP DO BOTÂO ADICIONAR -->
+   
 
    <div class="form-popup" id="myForm">
       <div class="form-container">
