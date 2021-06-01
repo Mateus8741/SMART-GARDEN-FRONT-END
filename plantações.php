@@ -83,34 +83,7 @@
    <div class="container-pc">
       <?php
          include "bd/listar.php";
-          while($row_lote = mysqli_fetch_assoc($resultado_lotes)){?>
-      
-      <div class="card-pc">
-         <div class="box-pc">
-            <div class="content-pc">
-               <div class="listas">
-                  <ul>
-                     <li>
-                        <h2><?= "ID: ".$row_lote['id'];?></h2>
-                     </li>
-                     <li>
-                        <h2><?= "Nome: ".$row_lote['nome_lote'];?></h2>
-                     </li>
-                     <li>
-                        <h2><?= "Area: ".$row_lote['area_em_m3']."m²";?></h2>
-                     </li>
-                     <li>
-                        <h2><?= "Data De Criação: ".$row_lote['created'];?></h2>
-                     </li>
-                     <li id="noborder"><a href="" id="edt">editar</a>
-                        <a href="#" id="edt">favoritar</a><i class="fas fa-star" style="filter: invert(100%);"></i></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
-
-   <?php } ?>
+          ?>
 
 
 
