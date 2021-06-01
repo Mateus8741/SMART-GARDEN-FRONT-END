@@ -92,6 +92,7 @@
 }
 .form-popup input[class='m2']{
   width: 235px;
+  background-color: red;
 }
 
 .form-container input[type=text]:focus, .form-container input[type=text]:focus {
