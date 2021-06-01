@@ -44,7 +44,7 @@ date_default_timezone_set('Brazil/East');
                     if($row_lote['horario']< $hora_atual){
                       echo "Estado Atual: Irrigado";
                     }else{
-                     echo "Estado Atual: Não Irrigado".$hora_atual;
+                     echo "Estado Atual: Não Irrigado";
                     }
                    ?></p>
                    </li>
