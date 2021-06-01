@@ -42,17 +42,17 @@
       </form>
     </div>
     <div class="form-container sign-in-container">
-      <form action="#">
-        <h1>SIGN IN</h1>
+      <form action="./bd/logar.php" method="POST">
+        <h1>Login</h1>
         <div class="social-container">
           <a href="#" class="face"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
         </div>
         <span>Ou entre com uma conta</span>
-        <input type="email" placeholder="E-mail" />
-        <input id="password" type="password" placeholder="Senha" required />
+        <input type="email" name="email" placeholder="E-mail"  required="required"/>
+        <input id="password" name="senha" type="password" placeholder="Senha"  required="required" />
         <a href="./forgot.html">Esqueceu sua senha?</a>
-        <button><a href="./main.html" style="color: black;">login</a></button>
+        <button type="submit" style="color: black;">Entrar</button>
       </form>
     </div>
     <div class="overlay-container">
@@ -71,6 +71,7 @@
     </div>
   </div>
   <script src="./js/scripts.js"></script>
+  <script src="./js/confirmsenha.js"></script>
   <script src="https://kit.fontawesome.com/905ede63f2.js" crossorigin="anonymous"></script>
 </body>
 
