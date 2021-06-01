@@ -1,5 +1,6 @@
 <?php
 include_once "conexao.php";
+date_default_timezone_set('Brazil/East');
 ?>
 
 <?php
@@ -45,5 +46,40 @@ include_once "conexao.php";
   //      }
   //   }
   //     echo "<a href='listar.php?pagina=$qtd_pag'>Ultima</a>";
+  $hora_atual = date("H:i:s");
+  while($row_lote = mysqli_fetch_assoc($resultado_lotes)){?>
+    <div class="card-pc">
+       <div class="box-pc">
+          <div class="content-pc">
+             <div class="listas">
+                <ul>
+                   <li>
+                      <h2><?= "Lote: ".$row_lote['nome_lote'];?></h2>
+                   </li>
+                   <li>
+                      <p><?= "Area de Irrigação: ".$row_lote['area_em_m3']."m²";?></p>
+                   </li>
+                   <li>
+                      <p><?= "Horário de Irrigação: ".$row_lote['horario'];?></p>
+                   </li>
+                   <li>
+                    
+                   <p><?php 
+                    if($row_lote['horario']> $hora_atual){
+                      echo "Estado Atual: Irrigado";
+                    }else{
+                     echo "Estado Atual: Não Irrigado";
+                    }
+                   ?></p>
+                   </li>
+                   <li id="noborder"><a href="" id="edt">Editar</a>
+                      <a href="#" id="edt">Favoritar</a><i class="fas fa-star" style="filter: invert(100%);"></i></li>
+                </ul>
+             </div>
+          </div>
+       </div>
+    </div>
+
+ <?php }
 
 ?>
