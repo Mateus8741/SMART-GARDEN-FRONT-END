@@ -34,7 +34,7 @@
       </ul>
       <ul>
          <li>
-            <a href="./plantações.html">
+            <a href="./plantações.php">
                <span class="icon"><i class="fab fa-pagelines fa-2x"></i></span>
                <span class="title">PLANTAÇÔES</span></a>
          </li>
@@ -73,7 +73,7 @@
 
 
    <div class="positionButton">
-       <button class="open-button" onclick="openForm()"> adicionar <i class="fas fa-plus-circle"></i></button>
+       <button class="open-button" onclick="openForm()">Add<i class="fas fa-plus-circle"></i></button>
     </div>
 
    <!-- POPUP DO BOTÂO ADICIONAR -->
