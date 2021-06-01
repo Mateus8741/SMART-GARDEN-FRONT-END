@@ -1,4 +1,7 @@
-
+<?php
+ require './bd/conexao.php';
+ if(isset($_SESSION['idUser'])&& !empty($_SESSION['idUser'])):
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,7 +66,7 @@
       <div id="baixo">
          <ul>
             <li>
-               <a href="./index.php">
+               <a href="./bd/logout.php">
                   <span class="icon"><i class="fas fa-door-open fa-2x"></i></span>
                   <span class="title">SIGN OUT</span></a>
             </li>
@@ -154,3 +157,4 @@
 </body>
 
 </html>
+<?php else:header("Location: index.php");endif;
