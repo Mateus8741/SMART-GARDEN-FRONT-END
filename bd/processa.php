@@ -1,38 +1,27 @@
 <?php
 session_start();
 include_once("conexao.php");
-
-// $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
-// $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-
-// //echo "Nome: $nome <br>";
-// //echo "E-mail: $email <br>";
-
-// $result_usuario = "INSERT INTO usuarios (nome, email, created) VALUES ('$nome', '$email', NOW())";
-// $resultado_usuario = mysqli_query($conn, $result_usuario);
-
-// if(mysqli_insert_id($conn)){
-// 	$_SESSION['msg'] = "<p style='color:green;'>Usuário cadastrado com sucesso</p>";
-// 	header("Location: index.php");
-// }else{
-// 	$_SESSION['msg'] = "<p style='color:red;'>Usuário não foi cadastrado com sucesso</p>";
-// 	header("Location: index.php");
-// }
-
-
+try{
 $lgn = $_POST["name"] ?? null;
 $email = $_POST["email"] ?? null;
 $pass = $_POST["senha"] ?? null;
 
 
-$sql = "INSERT INTO usuarios (nome,email,senha,created) VALUES ('$lgn','$email','$pass',NOW())";
-$req = mysqli_query($conn,$sql);
+$sql = $pdo->prepare("INSERT INTO usuarios (nome,email,senha,created) VALUES ('$lgn','$email','$pass',NOW())");
+$sql->execute();
 
-if(mysqli_insert_id($conn)){
-    $_SESSION['msg'] = "<p style = 'color:white'>Usuario Cadastrado!</p>";
+$_SESSION['msg'] = "<p style = 'color:white'>Usuario Cadastrado!</p>";
+header("Location:../index.php");
+}catch(PDOException $e) {
+    echo 'Error: ' . $e->getMessage();
     header("Location:../index.php");
-}else{
-    $_SESSION['msg'] = "<p style = 'color:red'>Usuario não Cadastrado!</p>";
-    header("Location:../index.php");}
+  }
+
+// if(mysqli_insert_id($conn)){
+//     $_SESSION['msg'] = "<p style = 'color:white'>Usuario Cadastrado!</p>";
+//     header("Location:../index.php");
+// }else{
+//     $_SESSION['msg'] = "<p style = 'color:red'>Usuario não Cadastrado!</p>";
+//     header("Location:../index.php");}
 
 
