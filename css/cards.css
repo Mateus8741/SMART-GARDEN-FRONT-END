@@ -222,6 +222,12 @@ p{
     display: flex;
     text-transform: uppercase;
 }
+.positoinButton button .fas.fa-plus-circle{
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    color: black;
+}
 
 button a{
     color: white;
