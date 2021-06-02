@@ -45,7 +45,7 @@ date_default_timezone_set('Brazil/East');
             </ul>
             <div class="card-body">
                <a href="#" class="card-link">Editar</a>
-               <a href="#" class="card-link" >Excluir</a>
+               <a href="./bd/deletar_lote.php?id=<?php echo $row_lote['id'];?>" class="card-link" >Excluir</a>
             </div>
          </div>
      </div>
