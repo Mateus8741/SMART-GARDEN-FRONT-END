@@ -13,11 +13,11 @@ $sql = $pdo->prepare("INSERT INTO lote (nome_lote,area_em_m3,area_plantio,irriga
 $sql->execute();
 
 $_SESSION['msg'] = "<p style = 'color:white'>Areade Plantio Cadastrada!</p>";
-header("Location:../plantações.php");
+header("Location:../lotes.php");
 
 }catch(PDOException $e) {
     echo 'Error: ' . $e->getMessage();
-    header("Location:../plantações.php");
+    header("Location:../lotes.php");
   }
 // if(mysqli_insert_id($conn)){
 //     $_SESSION['msg'] = "<p style = 'color:white'>Usuario Cadastrado!</p>";

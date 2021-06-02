@@ -24,38 +24,34 @@ date_default_timezone_set('Brazil/East');
  
   
   while ($row_lote = $result_lotes->fetch(PDO::FETCH_ASSOC)) {?>
-    <div class="card-pc">
-       <div class="box-pc">
-          <div class="content-pc">
-             <div class="listas">
-                <ul>
-                   <li>
-                      <h2><?= "Lote: ".$row_lote['nome_lote'];?></h2>
-                   </li>
-                   <li>
-                      <p><?= "Area de Irrigação: ".$row_lote['area_em_m3']."m²";?></p>
-                   </li>
-                   <li>
-                      <p><?= "Horário de Irrigação: ".$row_lote['horario'];?></p>
-                   </li>
-                   <li>
-                    
-                   <p><?php 
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+   <div class="box-part text-center">
+        <div class="card">
+            <div class="card-body">
+               <h5 class="card-title"><?= "Lote: ".$row_lote['nome_lote'];?></h5>
+            </div>
+            <ul class="list-group list-group-flush">
+               <li class="list-group-item"><?= "Area de Irrigação: ".$row_lote['area_em_m3']."m²";?></li>
+               <li class="list-group-item"><?= "Horário de Irrigação: ".$row_lote['horario'];?></li>
+               <li class="list-group-item"><?php 
                     if($row_lote['horario']< $hora_atual){
                       echo "Estado Atual: Irrigado";
                     }else{
                      echo "Estado Atual: Não Irrigado";
                     }
-                   ?></p>
-                   </li>
-                   <li id="noborder"><a href="" id="edt">Editar</a>
-                      <a href="#" id="edt">Favoritar</a><i class="fas fa-star" style="filter: invert(100%);"></i></li>
-                </ul>
-             </div>
-          </div>
-       </div>
-    </div>
+                   ?></li>
+            </ul>
+            <div class="card-body">
+               <a href="#" class="card-link">Editar</a>
+               <a href="#" class="card-link" >Excluir</a>
+            </div>
+         </div>
+     </div>
+   </div>
 
  <?php }
 
 ?>
+
