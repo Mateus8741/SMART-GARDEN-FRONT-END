@@ -43,12 +43,7 @@
     background: rgba(255, 255, 255, 0);
 }
 
-#edt{
-    font-weight: 900;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .container-pc .card-pc .box-pc{
     position: absolute;
@@ -66,6 +61,7 @@
     align-items: center;
     overflow: hidden;
 }
+
 
 .container-pc .card-pc .box-pc::before{
     content: ' ';
@@ -97,12 +93,13 @@
 
 #noborder {
     border-bottom: transparent;
+    
 }
 
 .container-pc .card-pc .box-pc .content-pc .listas ul li  {
     list-style: none;
-    border-bottom: solid black;
-    padding: 20px;
+    border-bottom: solid rgb(0, 0, 0);
+    padding: 15px;
 }
 
 
@@ -113,7 +110,8 @@
     top: -25px;
     right: 70px;
     */
-    font-size: 1em;
+    font-weight: 900;
+    font-size: 18px;
     -webkit-text-stroke-width: 0; /* largura da borda */
     -webkit-text-stroke-color: #000; /* cor da borda */
     text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.192);
@@ -129,9 +127,9 @@
     transition: 0.5s;
 }
 .container-pc .card-pc .box-pc .content-pc p {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 900;
     z-index: 1;
     transition: 0.5s;
 }
@@ -222,11 +220,9 @@ p{
     display: flex;
     text-transform: uppercase;
 }
-.positoinButton button .fas.fa-plus-circle{
-    justify-content: center;
-    align-items: center;
-    top: 100px;
-    color: black;
+#plus{
+    padding-top: 4px;
+    
 }
 
 button a{
@@ -236,9 +232,34 @@ button a{
 }
 
 
-a{
+a:hover{
+    color: rgb(255, 255, 255);
+}
+#edt{
+    font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.card-pc:hover #excl{
+    color: red;
+    transition: 1s;
+}
+.card-pc:hover #edt{
+    color: blue;
+    transition: 1s ;
+}
+#excl{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 

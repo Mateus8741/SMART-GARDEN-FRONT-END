@@ -76,7 +76,7 @@
 
 
    <div class="positionButton">
-       <button class="open-button" onclick="openForm()">Add<i class="fas fa-plus-circle"></i></button>
+       <button class="open-button" onclick="openForm()">Add<i id="plus" class="fas fa-plus-circle"></i></button>
     </div>
 
    <!-- POPUP DO BOTÂO ADICIONAR -->
