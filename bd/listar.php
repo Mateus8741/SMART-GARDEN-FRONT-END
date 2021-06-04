@@ -25,31 +25,36 @@ date_default_timezone_set('Brazil/East');
   
   while ($row_lote = $result_lotes->fetch(PDO::FETCH_ASSOC)) {?>
 
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-
-   <div class="box-part text-center">
-        <div class="card">
-            <div class="card-body">
-               <h5 class="card-title"><?= "Lote: ".$row_lote['nome_lote'];?></h5>
-            </div>
-            <ul class="list-group list-group-flush">
-               <li class="list-group-item"><?= "Area de Irrigação: ".$row_lote['area_em_m3']."m²";?></li>
-               <li class="list-group-item"><?= "Horário de Irrigação: ".$row_lote['horario'];?></li>
-               <li class="list-group-item"><?php 
-                    if($row_lote['horario']< $hora_atual){
-                      echo "Estado Atual: Irrigado";
-                    }else{
-                     echo "Estado Atual: Não Irrigado";
-                    }
-                   ?></li>
-            </ul>
-            <div class="card-body">
-               <a href="#" class="card-link">Editar</a>
-               <a href="./bd/deletar_lote.php?id=<?php echo $row_lote['id'];?>" class="card-link" >Excluir</a>
+<div class="card-pc">
+         <div class="box-pc">
+            <div class="content-pc">
+               <div class="listas">
+                  <ul>
+                     <li>
+                        <h2>Lote: <p><?=$row_lote['nome_lote'];?></p></h2>
+                     </li>
+                     <li>
+                        <h2>Área de Irrigação: <p><?=$row_lote['area_em_m3']."m²";?></p></h2>
+                     </li>
+                     <li>
+                        <h2>Horário de Irrigação:<p><?="<br> ".$row_lote['horario'];?></p></h2>
+                     </li>
+                     <li>
+                        <h2><?php 
+                          if($row_lote['horario']<$hora_atual){
+                            echo"Estado Atual: <p>Irrigado ✓</p>";
+                          }else{
+                           echo" Estado Atual: <p>Não Irrigado</p>";
+                          }
+                        ?></h2>
+                     </li>
+                     <li id="noborder"><a href="#" id="edt">Editar</a>
+                        <a href="./bd/deletar_lote.php?id=<?php echo $row_lote['id'];?>" id="excl">Excluir</a></li>
+                  </ul>
+               </div>
             </div>
          </div>
-     </div>
-   </div>
+      </div>
 
  <?php }
 
