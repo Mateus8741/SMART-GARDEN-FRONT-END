@@ -34,6 +34,7 @@
 .container .card:hover{
     height:450px;
     background:rgb(255, 255, 255);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.637);
     
 }
 
@@ -44,8 +45,7 @@
     height: 260px;
     justify-content: center;
     align-items: center;
-    
-    
+
     
  
 }
@@ -55,6 +55,7 @@
     max-width: 100%;
     border-radius: 150px;
     transition: .3s ease-in-out;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.637);
 }
 
 
@@ -74,4 +75,5 @@
 .container .card:hover .content{
     opacity: 1;
     transition: 1s ease-in-out;
+    
 }

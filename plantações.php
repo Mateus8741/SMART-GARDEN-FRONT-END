@@ -17,20 +17,21 @@
 </head>
 
 <body>
-
-   <div class="tituloPagInicial">
+   
+<!-- FICA NA MAIN.CSS-->
+   <div id="tituloPagInicial">
       <h5>Nome da plantação</h5>
    </div>
 
 
-   <!-- ***** Barra de menu lateral ***** -->
+   <!--***** Barra de menu lateral ***** -->
 
 
    <div class="navigation">
 
       <ul id="nohover">
          <li>
-            <a href="./main.html">
+            <a href="#" style="cursor: default;">
                <span class="icon"><img id="logo" style="width: 45px; height: 40px;" src="./img/logo.png" alt=""></span>
                <span class="title">SMART GARDEN</span></a>
 

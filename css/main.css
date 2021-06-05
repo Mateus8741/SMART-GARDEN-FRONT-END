@@ -6,10 +6,15 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.tituloPagInicial{
-    background:rgba(255, 255, 255, 0.137);    
-    box-shadow: 0 5px 202px rgba(0,0,0, 0.5);
-    
+#tituloPagInicial{
+    display: flex;
+    background:rgba(255, 255, 255, 0);    
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0);
+    color: white;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 h5 {
     display: flex;
@@ -43,14 +48,15 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     margin: 0 0 0;
 }
+/* TEM QUE AJEITAR TBM CLEBER */
 
 .navigation {
     position: fixed;
     transition: 0.1s;
-    height: 40%;
+    height: 400px;
     width: 60px;
     background: -webkit-linear-gradient(to right, #078007, #059c38);
     background: linear-gradient(to right, #078007, #059c38);
