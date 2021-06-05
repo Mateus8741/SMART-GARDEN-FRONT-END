@@ -12,7 +12,7 @@
   position: absolute;
     display: none;
     border: none;
-    z-index: 1;
+    z-index: 2000;
     width: 100%;
     height: 100%;
     justify-content: center;
