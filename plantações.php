@@ -44,9 +44,9 @@
       </ul>
       <ul>
          <li>
-            <a href="./manutenção.html">
+            <a href="./equipe.html">
                <span class="icon"><i class="fas fa-thermometer-three-quarters fa-2x"></i></span>
-               <span class="title">ESTAÇÔES</span></a>
+               <span class="title">EQUIPE</span></a>
          </li>
       </ul>
       <ul>
