@@ -7,37 +7,20 @@
 
 
 
-  
-  section{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: -1;
-  }
 
 
 
 
 
-  
-  section::before{
-      content: ' ';
-     /* position: absolute;*/
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-  }
 
-  .container-cd{
+.container-cd {
     flex-wrap: wrap;
-      position: absolute;
-      z-index: 1;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: center;
-      align-items: center;
-  }
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+}
+
   @media only screen and (max-width:1205px){
       .container-cd{
           grid-template-columns: repeat(2, 1fr);
