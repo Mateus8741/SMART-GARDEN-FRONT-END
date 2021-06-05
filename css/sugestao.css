@@ -1,86 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-
-*{
-
-    font-family: 'poppins', sans-serif;
-}
-
 
 .sugestao{
+    display: flex;
     justify-content: center;
-    align-items: center;
-    
 }
 
-
 .container{
-
-    position: relative;
-    width: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
-}
+    flex-wrap: wrap;
 
+}
 
 .container .card{
-
-
-    height: 215px;
-    border-end-end-radius: 150px;
-    background: rgba(255, 255, 255, 0.048);
-    margin: 30px 10px;
-    padding: 20px 15px;
-    display: block;
-    flex-direction: column;
-    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
-    transition: 0.3s ease-in-out;
-}
-.container .card:hover{
-
-    height: 500px;
-}
-
-
-.container .card .imgcard{
     position: relative;
-    width: 270px;
-    height: 260px;
-    top: -60px;
-    left: 20px;
-    right: 20px;
-    z-index: 1;
+    max-width: 380px;
+    height: 300px;
+    margin: 50px 10px;
+    padding: 20px 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(255, 255, 255, 0.041);
+    box-shadow: 0 5px 202px rgba(0,0,0, 0.5);
+    transition: 0.3s ease-in-out;
+    flex-direction: column;
 }
 
-.container .card .imgcard img{
-    max-width: 100%;
-    border-radius: 200px;
+.container .card:hover{
+    height:450px;
+    background:rgb(255, 255, 255);
+    
 }
+
+.container .card .img{
+    display: flex;
+    position: relative;
+    width: 260px;
+    height: 260px;
+    justify-content: center;
+    align-items: center;
+    bottom:200px;
+    
+ 
+}
+
+.container .card .img img{ 
+    display: flex;
+    max-width: 100%;
+    border-radius: 150px;
+}
+
 
 .container .card .content{
     position: relative;
-    margin-top: -140px;
-    padding: 10px 15px;
-    text-align: center;
-    color: #111;
-    visibility: hidden;
+    margin-top: -180px;
+    text-align: left;
     opacity: 0;
-    transition: 0.3s ease-in-out;
 }
 
 .container .card:hover .content{
-    visibility: visible;
     opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.2s;
-
-}
-
-p, h2, h3{
-
-    text-align:justify;
-    font-family: 'poppins', sans-serif;
-
+    transition: 1s ease-in-out;
 }
