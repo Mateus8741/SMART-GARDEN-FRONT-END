@@ -142,8 +142,8 @@
 
                <div class="label" style="display: inline;">IRRIGADORES:</div>
                <input type="number" name="irrig" class="m2" required="required">
-               <label>Horário de Irrigação: </label>
-               <input type="time" name="hora" placeholder="HORáRIO DE IRRIGAÇÔES:"><br><br>
+               <label>HORÁRIO DE IRRIGAÇÃO: </label>
+               <input type="time" name="hora" ><br><br>
                <div class="buttonWid">
                   <button type="submit" class="btn">Salvar</button>
                </div>

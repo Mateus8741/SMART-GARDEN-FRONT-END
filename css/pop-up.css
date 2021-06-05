@@ -53,10 +53,7 @@
   
 }
 /*
-.form-container {
 
-  TEM QUE MUDAR ESSA BUCETA HJ AINDA LEMBRA PAU NO CU PARA MATEUS
-}
 */
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=text] {
@@ -82,23 +79,40 @@
 }
 /* When the inputs get focus, do something */
 
-.form-container input[type=text]{
-  
+.form-popup select:focus{
+  outline: none;
+  animation: pisca 1s ease infinite;
 }
 .form-popup select{
  display: inline;
+ width: 75px;
  border-radius: 20px;
+ border: #059c38 solid 2px;
  
+}
+.form-popup input[class='m2']:focus{
+  outline: none;
+  animation: pisca 1s ease infinite;
 }
 .form-popup input[class='m2']{
   width: 300px;
-  padding: 5px;
+  padding: 2px;
   font-size: 20px;
   margin: 4px 0 5px 0;
   border: none;
-  border-bottom: 3px solid #078007;
+  border-bottom: 3px solid #059c38;
   background: transparent;
 
+
+}
+.form-popup input[type=time]:focus{
+  animation: pisca 1s ease infinite;
+  outline: none;
+}
+.form-popup input[type=time]{
+  border: 2px solid #059c38;
+  border-radius: 20px;
+  width: 75px;
 }
 
 .form-container input[type=text]:focus, .form-container input[type=text]:focus {
@@ -184,61 +198,3 @@
 
 
 
-/* NAO SERVE PRA NADA*/
-.modal-container {
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,.5);
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 2000;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-container.mostrar {
-  display: flex;
-}
-
-.modal {
-  background: white;
-  width: 60%;
-  min-width: 300px;
-  padding: 40px;
-  border: 10px solid #988b7a;
-  box-shadow: 0 0 0 10px white;
-  position: relative;
-}
-
-@keyframes modal {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -60px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.mostrar .modal {
-  animation: modal .3s;
-}
-
-.fechar {
-  position: absolute;
-  font-size: 1.2em;
-  top: -30px;
-  right: -30px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 4px solid white;
-  background: #988b7a;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  cursor: pointer;
-  box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
-}
