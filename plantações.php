@@ -13,6 +13,7 @@
    <link rel="stylesheet" href="./css/main.css">
    <link rel="stylesheet" href="./css/cards.css">
    <link rel="stylesheet" href="./css/pop-up.css">
+   <link rel="shortcut icon" href="./img/logo verde.png" type="image/x-icon">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
       <ul id="nohover">
          <li>
             <a href="./main.html">
-               <span class="icon"></i></span>
+               <span class="icon"><img id="logo" style="width: 45px; height: 40px;" src="./img/logo.png" alt=""></span>
                <span class="title">SMART GARDEN</span></a>
 
          </li>
@@ -45,7 +46,7 @@
       <ul>
          <li>
             <a href="./equipe.html">
-               <span class="icon"><i class="fas fa-thermometer-three-quarters fa-2x"></i></span>
+               <span class="icon"><i class="fas fa-users fa-2x"></i></span>
                <span class="title">EQUIPE</span></a>
          </li>
       </ul>
