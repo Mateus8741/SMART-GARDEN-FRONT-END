@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <link rel="icon" type="imagem/png" href="./img/icone.jpg" />
+  <link rel="shortcut icon" href="./img/logo verde.png" type="image/x-icon">
   <title>Smart Garden</title>
 </head>
 
@@ -43,12 +43,14 @@
     </div>
     <div class="form-container sign-in-container">
       <form action="./bd/logar.php" method="POST">
-        <h1>Login</h1>
+        <h1>LOGIN</h1>
+        <!--
         <div class="social-container">
           <a href="#" class="face"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="google"><i class="fab fa-google-plus-g"></i></a>
         </div>
         <span>Ou entre com uma conta</span>
+        -->
         <input type="email" name="email" placeholder="E-mail"  required="required"/>
         <input id="password" name="senha" type="password" placeholder="Senha"  required="required" />
         <a href="./forgot.html">Esqueceu sua senha?</a>

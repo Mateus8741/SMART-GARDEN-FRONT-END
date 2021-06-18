@@ -43,12 +43,13 @@ span {
 }
 
 a {
-	color: rgb(104, 101, 101);
+	color: #078007;
 	font-size: 14px;
-	font-weight: 900;
+	font-weight: bold;
 	text-decoration: none;
 	margin: 15px 0;
 }
+
 
 button {
 	border-radius: 20px;
@@ -80,6 +81,7 @@ button.ghost {
 	background-color: transparent;
 	border-color: white;
 	border-width: 2px;
+	
 }
 
 form {
@@ -95,11 +97,12 @@ form {
 
 input {
 	background-color: rgb(240, 237, 237);
-	border: solid white;
+	border: solid rgba(255, 255, 255, 0);
 	padding: 12px 15px;
 	margin: 8px 0;
 	width: 100%;
 	border-radius: 20px;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 input:focus {
